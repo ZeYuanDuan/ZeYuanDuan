@@ -5,8 +5,6 @@
 
 ## LivePoll
 
-![LivePoll Thumbnail.png](https://github.com/ZeYuanDuan/ZeYuanDuan/blob/main/LivePoll%20Thumbnail.png "LivePoll Thumbnail.png")
-
 **類似 Slido 的即時投票平台，支援多裝置同步更新投票結果，讓使用者能快速參與互動。專案針對高併發、低延遲以及消息可靠性進行設計與優化。**
 
 **【專案特色】**
@@ -21,7 +19,6 @@
 
 ## Vocabulary Flashcards
 
-![Vocabulary Flashcards Thumbnail.png](https://github.com/ZeYuanDuan/ZeYuanDuan/blob/main/Vocabulary%20Flashcards%20Thumbnail.png "Vocabulary Flashcards Thumbnail.png")
 
 **單字管理應用，利用第三方 API 每日自動推送新單字和例句，讓使用者儲存不熟悉的單字並自訂標籤進行分類。專案技術重點在於 API 開發、資料庫管理及身份驗證。**
 
