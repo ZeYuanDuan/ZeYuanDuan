@@ -1,34 +1,64 @@
-## 嗨，我是段則元
-我是一位具有哲學背景的後端工程師，擁有一年開發經驗。從探索抽象理論到開發網站系統，我對「解決問題」的熱忱始終如一。透過 ALPHA Camp 的培訓與自主學習，我習得後端開發的能力，完成多個專案，建立了紮實的技術基礎。
+[資料結構與演算法筆記](https://impartial-marble-6cc.notion.site/Leetcode-75-2948c32a5fa780ddb298c3620531adf1)
 
-# 我的專案
+## 個人簡介
 
-## LivePoll
+後端工程師（Go / Node.js），在日常開發中，針對效能與架構問題，以明確的設計概念拆解並重構。具備計算理論研究背景，持續以技術分享輸出學習成果，涵蓋分散式系統與並發模型等主題。
 
-**類似 Slido 的即時投票平台，支援多裝置同步更新投票結果，讓使用者能快速參與互動。專案針對高併發、低延遲以及消息可靠性進行設計與優化。**
+---
 
-**【專案特色】**
+## 技能
 
--   **高併發與即時更新**：使用 Redis 搭配 WebSocket 處理高併發需求及即時更新，確保前端設備之間的數據同步快速且可靠。
--   **資料快取與持久性**：使用 Redis 儲存投票過程中的臨時狀態，並使用 MySQL 實現投票數據的長期持久化管理。
--   **消息可靠性 (message durability)**：整合 RabbitMQ 作為消息隊列，在高負載情況下提供可靠的消息傳遞機制。
--   **容器化與雲端部署**：採用 Docker 將服務容器化，並部署於 AWS EC2，結合 AWS RDS 進行資料庫管理，以提升系統擴展性與穩定性。
+- **語言與框架：** Go (Golang), JavaScript, TypeScript, Node.js, NestJS
+- **資料系統：** MySQL, PostgreSQL, Redis, Message Queue
+- **基礎設施：** Docker, Kubernetes (K8s), Helm, GCP, AWS, Linux, CI/CD, Git
+- **工程實踐：** REST API, Design Patterns, Unit/Integration Testing, Jest
 
-![【LivePoll】System Architecture.png](https://github.com/ZeYuanDuan/ZeYuanDuan/blob/main/%E3%80%90LivePoll%E3%80%91System%20Architecture.png "【LivePoll】System Architecture.png")
+## 工作經歷
 
+### 細細生活網路科技（maaūu 也有房產）
 
-## Vocabulary Flashcards
+房地產科技新創，開發台日跨境房產電商平台，整合物件搜尋、資料同步與內容行銷系統。
 
+<aside>
 
-**單字管理應用，利用第三方 API 每日自動推送新單字和例句，讓使用者儲存不熟悉的單字並自訂標籤進行分類。專案技術重點在於 API 開發、資料庫管理及身份驗證。**
+- 重構活動報名系統，將 API 延遲從 5.5 秒縮短至 70 毫秒：
+原流程同步等待寄信導致阻塞，引入 Redis 訊息佇列解耦寄信服務，由消費者非同步處理並支援失敗重試。
+- 提升房產查詢效能，減少冗餘的資料庫存取：
+利用 JOIN 和 JSON 聚合重構關聯查詢，消除 N+1 問題；針對高頻查詢導入快取機制，避免重複計算。
+- 建立房產 ETL 管線，每日同步日本房產資料：
+實作防腐層，隔離外部格式變動；設計批量比對機制，偵測重複及更新，並以整合測試驗證流程。
+- 改良房產篩選與排序系統，應對數十種條件的複雜交互：
+以策略模式封裝各條件為獨立模組，透過依賴注入動態組裝查詢，策略邏輯以單元測試完整覆蓋。
+- 設計部落格發布流程，大幅降低誤發風險：
+將內容分為編輯和待發佈區，以狀態機管理轉移規則，確保發佈前須經明確提交，並自動標示同步狀態。
+- 實現 K8s 配置中心化管理，確保跨環境一致性：
+利用 Helm 建立標準化部署模板，於單一儲存庫版本控制，整合 CI/CD 流程自動部署至 GKE。
+</aside>
 
-  
+共同發起每週技術讀書會，累積達 17 次發表，主題涵蓋設計模式、訊息佇列、單元測試、網路協定、分散式系統、Go 並發模型與計算理論。
 
-**【專案特色】**
+### 國立中正大學
 
--   **API 設計與測試**：開發具完整 CRUD 功能的 RESTful API，用於管理用戶數據和單字清單，並使用 Postman 測試 API 邏輯。
--   **身分驗證**：使用 JWT 實現無狀態的身份驗證，並整合 Google OAuth 2.0 提供第三方登入服務。
--   **資料庫和快取**：採用 MySQL 作為主要資料庫，搭配 Redis 快取，提升數據讀取速度，減少伺服器負擔。
--   **每日任務自動化**：使用 CronJobs 排程每日從第三方 API 獲取單字，確保內容更新。
+研究助理
 
-![Vocabulary Flashcards demo.png](https://github.com/ZeYuanDuan/ZeYuanDuan/blob/main/Vocabulary%20Flashcards%20demo.png "Vocabulary Flashcards demo.png")
+- 於可計算性理論（Computability Theory）從事跨領域研究，以數學方法證明理論結果，並闡釋其哲學意涵。
+- 於國際會議 Logic Colloquium 發表共著研究論文（2022 年，冰島雷克雅維克），探討形式化理論的不可計算性。
+
+### 中央研究院資訊科學研究所
+
+暑期實習生
+
+參與型別論（Type Theory）的數學基礎研究，並探討其在形式化驗證（Formal Verification）等領域的應用。
+
+## 學歷
+
+### 國立中正大學 哲學系
+
+學士
+
+GPA: 4.2/4.3，排名 1/51。四次校長獎（學期成績排名前 5%），長期擔任邏輯課助教，專注數理邏輯（Mathematical Logic）和形式哲學（Formal Philosophy）研究。
+
+## 其他
+
+- 英文精通（2022 年，TOEFL iBT 103、GRE Verbal 162），日常以英文閱讀技術文件與社群資源，活躍於 Toastmasters 英文演講社團。
+- 自主馬拉松訓練，週跑量 40 公里以上，半馬最佳 1:56，持續參與全馬賽事。
