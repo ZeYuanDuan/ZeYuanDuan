@@ -1,77 +1,26 @@
-# 專案和筆記
+## 履歷
+[中文履歷（2026.04.02）](https://drive.google.com/file/d/1EhdfmswFJ96JFRJeGY4ySTwnUSuOrPYr/view)
 
-### [容器管理系統](https://github.com/ZeYuanDuan/Go-Container-Manager)
+[英文履歷（2026.04.02）](https://drive.google.com/file/d/1MP5BcnWXunYhk7Vy3K7WugpeZKC_MZyX/view)
+
+
+
+## 專案和筆記
+
+### 專案
+
+[容器管理系統](https://github.com/ZeYuanDuan/Go-Container-Manager)
+
 容器管理系統的 REST API 服務。使用者登入後可上傳資料到專屬資料夾，透過 API 建立 Docker 容器，並自動掛載該使用者的資料夾至容器內部。
 
 
-### [日誌 SDK](https://github.com/ZeYuanDuan/Go-Logger)
-Go 日誌 SDK，支援自訂輸出目的地，非阻塞寫入。
+[日誌 SDK](https://github.com/ZeYuanDuan/Go-Logger)
+
+Go 日誌 SDK，可自訂多輸出目的地，背景非同步寫入，低記憶體配置。
 
 
-## 筆記
+### 筆記
 [公開讀書會筆記](https://impartial-marble-6cc.notion.site/3358c32a5fa7804c83fde13b25753b53?v=3358c32a5fa78086b8b4000c24441085)
 
 [資料結構與演算法筆記](https://impartial-marble-6cc.notion.site/Leetcode-75-2948c32a5fa780ddb298c3620531adf1)
 
-# 個人簡介
-
-後端工程師（Go／Node.js），具備計算理論研究背景與英文溝通能力，擅長以設計概念拆解效能與架構問題。於新創團隊負責搜尋系統、資料管線與內容系統的後端開發。期望深入並發與分散式系統的工程實踐。
-
----
-
-## 技能
-
-- **語言與框架：** Go (Golang), JavaScript, TypeScript, Node.js, NestJS
-- **資料系統：** MySQL, PostgreSQL, Redis, Message Queue
-- **基礎設施：** Docker, Kubernetes (K8s), Helm, GCP, AWS, Linux, CI/CD, Git
-- **工程實踐：** REST API, Design Patterns, Unit/Integration Testing, Jest
-
-## 工作經歷
-
-### 細細生活網路科技（maaūu 也有房產）
-
-房地產科技新創，開發台日跨境房產電商平台，整合物件搜尋、資料同步與內容行銷系統。
-
-<aside>
-
-- 重構活動報名系統，將 API 延遲從 5.5 秒縮短至 70 毫秒：
-原流程同步等待寄信導致阻塞，引入 Redis 訊息佇列解耦寄信服務，由消費者非同步處理並支援失敗重試。
-- 提升房產查詢效能，減少冗餘的資料庫存取：
-利用 JOIN 和 JSON 聚合重構關聯查詢，消除 N+1 問題；針對高頻查詢導入快取機制，避免重複計算。
-- 建立房產 ETL 管線，每日同步日本房產資料：
-實作防腐層，隔離外部格式變動；設計批量比對機制，偵測重複及更新，並以整合測試驗證流程。
-- 改良房產篩選與排序系統，應對數十種條件的複雜交互：
-以策略模式封裝各條件為獨立模組，透過依賴注入動態組裝查詢，策略邏輯以單元測試完整覆蓋。
-- 設計部落格發布流程，大幅降低誤發風險：
-將內容分為編輯和待發佈區，以狀態機管理轉移規則，確保發佈前須經明確提交，並自動標示同步狀態。
-- 實現 K8s 配置中心化管理，確保跨環境一致性：
-利用 Helm 建立標準化部署模板，於單一儲存庫版本控制，整合 CI/CD 流程自動部署至 GKE。
-</aside>
-
-共同發起每週技術讀書會，累積達 17 次發表，主題涵蓋設計模式、訊息佇列、單元測試、網路協定、分散式系統、Go 並發模型與計算理論。
-
-### 國立中正大學
-
-研究助理
-
-- 於可計算性理論（Computability Theory）從事跨領域研究，以數學方法證明理論結果，並闡釋其哲學意涵。
-- 於國際會議 Logic Colloquium 發表共著研究論文（2022 年，冰島雷克雅維克），探討形式化理論的不可計算性。
-
-### 中央研究院資訊科學研究所
-
-暑期實習生
-
-參與型別論（Type Theory）的數學基礎研究，並探討其在形式化驗證（Formal Verification）等領域的應用。
-
-## 學歷
-
-### 國立中正大學 哲學系
-
-學士
-
-GPA: 4.2/4.3，排名 1/51。四次校長獎（學期成績排名前 5%），長期擔任邏輯課助教，專注數理邏輯（Mathematical Logic）和形式哲學（Formal Philosophy）研究。
-
-## 其他
-
-- 英文精通（2022 年，TOEFL iBT 103、GRE Verbal 162），日常以英文閱讀技術文件與社群資源，活躍於 Toastmasters 英文演講社團。
-- 自主馬拉松訓練，週跑量 40 公里以上，半馬最佳 1:56，持續參與全馬賽事。
