@@ -3,7 +3,7 @@
 
 [英文履歷（2026.04.02）](https://drive.google.com/file/d/1MP5BcnWXunYhk7Vy3K7WugpeZKC_MZyX/view)
 
-
+[工作成就炫耀文件](https://impartial-marble-6cc.notion.site/33a8c32a5fa780dcba9cd5f2d25d63f8?v=33a8c32a5fa78106a889000cbc01c2bc)
 
 ## 專案和筆記
 
